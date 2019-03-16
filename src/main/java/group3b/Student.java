@@ -31,6 +31,19 @@ public class Student extends Human{
 
     }
 
+    public void setName(String value){
+
+        this.name = value;
+
+    }
+
+    public void setSurname(String value){
+
+        this.surname = surname;
+
+    }
+
+
 
 
 }
