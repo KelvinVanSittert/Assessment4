@@ -30,6 +30,20 @@ public class App
         Eat eat = new Eat();
         eat.doEat();
 
+        //The bad OCP is in employee, because human has already been made and we do not implement it,
+        //so we must make name, surname and gender again
+        Employee employee = new Employee("Name", "surname", "male");
+
+        //The good OCP is in Student, because human has already been made and we implement it
+        //The good DIP is in student, because you dont rely on concrete classes, you rely on an interface(Human)
+        Student student = new Student(year, name, surname, gender);
+
+
+        //The bad DIP is in dog, you are relying on a concrete class(Animal)
+        Dog dog = new Dog();
+        dog.canMove();
+        dog.bark();
+
 
 
 
