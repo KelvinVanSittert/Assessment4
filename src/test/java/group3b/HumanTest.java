@@ -4,6 +4,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 /*
+
+//the test is commented out so you can see the test case for our super class
+
 public class HumanTest {
 
     @Test
