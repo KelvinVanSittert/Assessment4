@@ -1,26 +1,9 @@
 package group3b;
 
-public class Human {
+public interface Human {
 
-    //this will be our super class
+    //this will be our interface class
 
-    private String gender;
-
-    Human(){
-
-    }
-
-    Human(String gender){
-
-        this.gender = gender;
-    }
-
-    public void setGender(String gender){
-        this.gender = gender;
-    }
-
-    public String getGender(){
-        return gender;
-    }
-
+    public void setGender(String gender);
+    public String getGender();
 }
