@@ -6,6 +6,7 @@ import static org.junit.Assert.*;
 /*
 
 //the test is commented out so you can see the test case for our super class
+//we have since adding to this class when we converted it to an interface
 
 public class HumanTest {
 

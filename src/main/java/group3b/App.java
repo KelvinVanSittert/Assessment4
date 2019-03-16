@@ -13,9 +13,10 @@ public class App
         String name = "Kelvin";
         String surname = "Van Sittert";
         String gender = "Male";
+        int year = 2;
 
         //Encapsulation and Polymorphism and Inheritance
-        Student completedStudent = new Student(name, surname, gender);
+        Student completedStudent = new Student(year, name, surname, gender);
 
         //Encapsulation and Polymorphism
         Student emptyStudent = new Student();
@@ -28,6 +29,7 @@ public class App
         //This is good because each class has one responsibility
         Eat eat = new Eat();
         eat.doEat();
+
 
 
 

@@ -9,7 +9,7 @@ public class StudentTest {
     @Test
     public void getName() {
 
-        Student student = new Student("Name", "Surname", "Male");
+        Student student = new Student(2 , "Name", "Surname", "Male");
 
         assertEquals("Name", student.getName());
     }
@@ -17,16 +17,16 @@ public class StudentTest {
     @Test
     public void setName() {
 
-        Student student = new Student("Name", "Surname", "Male");
+        Student student = new Student(2 ,"Name", "Surname", "Male");
         student.setName("change");
 
-        assertEquals("Name", student.getName());
+        assertEquals("change", student.getName());
     }
 
     @Test
     public void getSurname() {
 
-        Student student = new Student("Name", "Surname", "Male");
+        Student student = new Student(2 ,"Name", "Surname", "Male");
 
         assertEquals("Surname", student.getSurname());
     }
@@ -34,16 +34,16 @@ public class StudentTest {
     @Test
     public void setSurname() {
 
-        Student student = new Student("Name", "Surname", "Male");
+        Student student = new Student(2 ,"Name", "Surname", "Male");
         student.setSurname("change");
 
-        assertEquals("Name", student.getSurname());
+        assertEquals("change", student.getSurname());
     }
 
     @Test
     public void getGender() {
 
-        Student student = new Student("Name", "Surname", "Male");
+        Student student = new Student(2 ,"Name", "Surname", "Male");
 
         assertEquals("Male", student.getGender());
     }
@@ -51,9 +51,28 @@ public class StudentTest {
     @Test
     public void setGender() {
 
-        Student student = new Student("Name", "Surname", "Male");
+        Student student = new Student(2 ,"Name", "Surname", "Male");
         student.setGender("Female");
 
         assertEquals("Female", student.getGender());
+    }
+
+    @Test
+    public void setYear(){
+
+        Student student = new Student(2 ,"Name", "Surname", "Male");
+        student.setYear(4);
+
+        assertEquals(4, student.getYear());
+
+    }
+
+    @Test
+    public void getYear(){
+
+        Student student = new Student(2 ,"Name", "Surname", "Male");
+
+        assertEquals(2, student.getYear());
+
     }
 }
